@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Coco Lee</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <header>
+        <div class="nav-left">
+            <a href="index.html">COCOLEE</a>
+        </div>
+        </header>
+
+        <div class="nav-right">
+        <ul>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <article id="about">
+            <div>
+            <h1>About Me</h1>
+            <p>Hello! My name is Coco Lee. I am a passionate multimedia designer with an MBA and a diverse background in marketing, content creation, and business strategy.</p>
+            <button onclick="showMore()">MORE ABOUT ME</button>
+            <p id="more-info" style="display: none;">I specialize in UI/UX design, interaction design, and digital storytelling, combining creativity with data-driven insights to deliver impactful solutions. My entrepreneurial experience and corporate roles sharpened my ability to align design with business goals, creating user-focused results that stand out. I aim to continuously grow as a designer while helping brands and projects shine through innovative, user-focused designs.</p>
+            </div>
+            <div>
+                <img id="me-pic" src="img/me.png" alt="Coco's Picture" onmouseover="changeMePicture()" onmouseout="resetMePicture()">
+            </div>
+        </article>
+
+        <section id="skills">
+            <div class="imageBox">
+                <div class="imageInn">
+                <img src="img/Record.png"  alt="Album Image">
+                </div>
+                <div class="hoverImg">
+                <img src="img/Recordback.png" alt="Album Image">
+                </div>
+            </div>
+            <div>
+                <h2>Skills</h2>
+                <p>As a creative and versatile professional, I have developed expertise in multimedia design, video editing, and web development. My skills include HTML, CSS, JavaScript, and visual storytelling, enabling me to create interactive websites and captivating visual content. I’m proficient in Adobe Creative Suite, crafting seamless designs and animations with tools like After Effects. I’m passionate about blending creativity with technology to deliver impactful and user-friendly digital experiences.</p>
+                <button>UI/UX DESIGN</button>
+                <button>GRAPHIC DESIGN</button>
+                <button>MOTION DESIGN</button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div>
+                <h3>Contact</h3>
+                <p>Enter your name:</p>
+                <input type="text" id="name-input" placeholder="Your Name">
+                
+                <p>Enter your email:</p>
+                <input type="email" id="email-input" placeholder="Your Email">
+                
+                <p>Enter your message:</p>
+                <textarea id="message-input" placeholder="Your Message" rows="5" cols="30"></textarea><br><br>
+                
+                <button onclick="greet()">SUBMIT</button>
+                <p id="greeting"></p>
+                <p id="hidden-message" style="display: none;">Thank you for visiting! Feel free to also reach out to me via my email cocolee.made@gmail.com.</p>
+                
+            </div>
+            <div>
+                <img id="profile-pic" src="img/contact.png" alt="Coco's Picture" onmouseover="changePicture()" onmouseout="resetPicture()">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Coco Lee. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+/* CSS Style Sheet */
+
+/* Imports */
+
+@font-face {
+    font-family: RugeBoodie-Regular;
+    src: url(../fonts/RugeBoogie-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Bold;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: Raleway-ExtraBold;
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Raleway-ExtraLight;
+    src: url(../fonts/Raleway-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Heavy;
+    src: url(../fonts/Raleway-Heavy.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Light;
+    src: url(../fonts/Raleway-Light.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Medium;
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Regular;
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway-SemiBold;
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Thin;
+    src: url(../fonts/Raleway-Thin.ttf);
+}
+
+
+/* Variables */
+
+html {
+    scroll-behavior: smooth;
+    background-color: #f6eee3;
+    font-family: Raleway-Regular;
+    font-size: 1.2em;
+    color: #382812;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Structure */
+
+/* Navigation bar */
+
+nav {
+    background-color: #c6b15e;
+    height: 90px;
+    font-size: 14pt;
+    font-family: Raleway-Regular;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    border-bottom: 2px solid #382812;
+}
+
+.nav-left {
+    margin-left: 40px;
+    font-size: 35pt;
+    display: flex; 
+    justify-content: left;
+    font-family: RugeBoodie-Regular;
+    font-weight: 600;
+}
+
+.nav-left a {
+    color: #382812;
+}
+
+.nav-right {
+    margin-right: 40px;
+    display: flex;
+    justify-content: right;
+    font-family: Raleway-Extrabold;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4d4d4d;
+    transition: .3s all ease;
+}
+
+nav ul li a:hover {
+    color: #cbe800;
+}
+
+/* about */
+
+#about {
+    display: flex;
+    padding: 70px 170px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#about div {
+    flex: 1;
+}
+
+#about h1{
+    font-family: Raleway-Extrabold;
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+#about p {
+    margin-top: 30px;
+}
+
+#about img {
+    width: 33vw;
+    padding-left: 40px;
+}
+
+button {
+    background-color: #fc6945;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .3s all ease;
+}
+
+button:hover {
+    background-color: #fde257;
+}
+
+button:active {
+    box-shadow: 0px 0px #382812;
+    transform: translate(3px, 3px);
+}
+button {
+    background-color: #fc6945;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .3s all ease;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #382812;
+    -webkit-box-shadow: 4px 4px #382812;
+            box-shadow: 4px 4px #382812;
+    cursor: pointer;
+    margin:0  auto;
+}
+
+/* skills */
+
+#skills {
+    background-color: #afccc7;
+    display: flex;
+    padding: 70px 170px 70px 100px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    border-top: 2px solid #382812;
+    border-bottom: 2px solid #382812;
+}
+
+#skills h2{
+    font-family: Raleway-Extrabold;
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+#skills div {
+    flex: 1;
+}
+
+#skills img {
+    width: 45vw;
+}
+
+#skills p {
+    padding-bottom: 20px;
+}
+
+.hoverImg img {
+    width: 45vw;
+}
+
+.imageBox {
+    position: relative;
+    float: left;
+    width: 100%;
+    max-width: 700px;
+}
+
+.imageBox .hoverImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.imageBox:hover .hoverImg {
+    display: block;
+}
+
+#skills button {
+    background-color: #d2aacb;
+    margin: 0 3px;
+}
+
+#skills button:hover {
+    background-color: #e2d3bb;
+}
+
+/* contact */
+
+#contact {
+    background-color: #fc6945;
+    display: flex;
+    padding: 70px 170px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    border-bottom: 2px solid #382812;
+}
+
+#contact h3{
+    font-family: Raleway-Extrabold;
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+#contact img {
+    width: 33vw;
+}
+
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+}
